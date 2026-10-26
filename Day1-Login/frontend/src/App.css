@@ -1,0 +1,175 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #222;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 8%;
+  background: #17365d;
+  color: white;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.nav-links button {
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.home {
+  text-align: center;
+  padding: 110px 20px;
+}
+
+.home h1 {
+  font-size: 40px;
+  color: #17365d;
+}
+
+.home p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.home-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  display: inline-block;
+  background: #17365d;
+  color: white;
+  padding: 11px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn.secondary {
+  background: #e1e8f0;
+  color: #17365d;
+}
+
+.form-container {
+  width: min(400px, 90%);
+  margin: 55px auto;
+  padding: 28px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px #00000010;
+}
+
+.form-container h2,
+.results h2 {
+  color: #17365d;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  margin: 14px 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-container .btn {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.results {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.result-form {
+  max-width: 500px;
+  margin-bottom: 35px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  background: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background: #e8eef6;
+  color: #17365d;
+}
+
+.error {
+  color: #c62828;
+}
+
+.delete-btn {
+  color: white;
+  background: #c62828;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 16px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .nav-links {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .home {
+    padding: 70px 15px;
+  }
+
+  .home h1 {
+    font-size: 30px;
+  }
+}
